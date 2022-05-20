@@ -1,15 +1,182 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Weather Analysis · Home</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Web Challenge</title>
-</head>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
-<body>
-  <!-- Header -->
-  <h1>Testing, testing, 1 - 2 - 3 </h1>
+    
 
-</body>
+    
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+        
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="#">Humidity</a></li>
+                <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="container marketing">
+
+    <!-- Two columns of text -->
+    <div class="row" style="margin-top: 3em">
+      <div class="col-lg-7" >
+        
+        <h2 class="fw-normal"> <b>Summary: Latitude vs. X</b></h2>
+        <hr>
+        <br>
+        <img src="assets/images/Fig1.png" class="float-sm-start" alt="..." width=450px height=auto>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+          To accomplish this analysis, we first pulled data from the OperWeatherMap API to assemble a dataset on over 500 cities.
+        </p>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at
+          included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created 
+          as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+        </p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-5">
+        
+        <h2 class="fw-normal"><b>Visualizations</b></h2>
+        <hr>
+
+        <table class="table table-image">
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <a href="#"> 
+                  <img src="assets/images/Fig1.png" class="img-fluid" alt="Fig1">
+                </a>
+              </td>
+              <td class="w-25">
+                <a href="#"> 
+                  <img src="assets/images/Fig2.png" class="img-fluid" alt="Fig2">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-25">
+                <a href="#"> 
+                  <img src="assets/images/Fig3.png" class="img-fluid" alt="Fig3">
+                </a>
+              </td>
+              <td class="w-25">
+                <a href="#"> 
+                  <img src="assets/images/Fig4.png" class="img-fluid" alt="Fig4">
+                </a>
+              </td>
+              
+            </tr>
+          </tbody>
+        </table>   
+      </div><!-- /.col-lg-4 -->
+  
+    </div><!-- /.row -->
+
+
+  </div><!-- /.container -->
+
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+      
+  </body>
 </html>
