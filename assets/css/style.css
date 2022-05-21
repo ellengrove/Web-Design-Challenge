@@ -20,6 +20,11 @@ body {
   padding: 20px;
 }
 
+.col-lg-12 {
+  background-color: white;
+  padding: 20px;
+}
+
 h2 {
   color: rgb(67, 105, 171);
   font-family: Georgia, serif;
