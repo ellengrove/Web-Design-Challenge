@@ -117,57 +117,35 @@
 
     <!-- Two columns of text -->
     <div class="row" style="margin-top: 3em">
-      <div class="col-lg-7" >
-        
+      <div class="col-lg-12">
         <h2 class="fw-normal"> <b>Comparison: Latitude vs. X</b></h2>
         <hr>
-        <br>
-        <img src="assets/images/Fig1.png" class="float-sm-start" alt="..." width=450px height=auto>
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-          To accomplish this analysis, we first pulled data from the OperWeatherMap API to assemble a dataset on over 500 cities.
-        </p>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at
-          included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created 
-          as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-        </p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-5">
-        
-        <h2 class="fw-normal"><b>Visualizations</b></h2>
-        <hr>
+        <p>Click on any plot to get an in-depth analysis.</p>
+      </div>
+    </div>
+    <div class="row">
+    
+      <div class="col-lg-6">
+      
+        <h4 style="text-align: center;"><b>Max Temperature</b></h4>
+        <a href="max_temp.html"><img src="assets/images/Fig1.png" width=100%></a>
+      
+        <h4 style="text-align: center;"><b>Cloudiness</b></h4>
+        <a href="cloudiness.html"><img src="assets/images/Fig3.png" width=100%></a>
+      </div>
+      <div class="col-lg-6">
+       
+        <h4 style="text-align: center;"><b>Humidity</b></h4>
+        <a href="humidity.html"><img src="assets/images/Fig2.png" width=100%></a>
 
-        <table class="table table-image">
-          <tbody>
-            <tr>
-              <td class="w-25">
-                <a href="max_temp.html"> 
-                  <img src="assets/images/Fig1.png" class="img-fluid" alt="Fig1">
-                </a>
-              </td>
-              <td class="w-25">
-                <a href="humidity.html"> 
-                  <img src="assets/images/Fig2.png" class="img-fluid" alt="Fig2">
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td class="w-25">
-                <a href="cloudiness.html"> 
-                  <img src="assets/images/Fig3.png" class="img-fluid" alt="Fig3">
-                </a>
-              </td>
-              <td class="w-25">
-                <a href="wind_speed.html"> 
-                  <img src="assets/images/Fig4.png" class="img-fluid" alt="Fig4">
-                </a>
-              </td>
-              
-            </tr>
-          </tbody>
-        </table>   
-      </div><!-- /.col-lg-4 -->
+        <h4 style="text-align: center;"><b>Wind Speed</b></h4>
+        <a href="wind_speed.html"><img src="assets/images/Fig4.png" width=100%></a>
+
+      </div>
   
     </div><!-- /.row -->
+  
+    </div>
 
 
   </div><!-- /.container -->
